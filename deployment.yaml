@@ -20,7 +20,7 @@ spec:
     - name: taxiappcontainer
       image: prasadnaidu123/prasad
       ports:
-      - containerPort: 8080
+      - containerPort: 8090
 ---
 apiVersion: v1
 kind: Service
@@ -32,6 +32,6 @@ spec:
    app: taxiapp
   ports:
    - port: 80
-     targetPort: 8080
+     targetPort: 8090
      nodePort: 30736
 ...
